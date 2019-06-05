@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.2'
+ruby '2.6.3'
 
 gem 'rails', '~> 5.2.3'
 gem 'sqlite3'
@@ -16,6 +16,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
+  gem 'ruby-debug-ide', require: false
+  gem 'debase', require: false
 end
 
 group :development do
